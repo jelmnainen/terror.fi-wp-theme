@@ -3,8 +3,24 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
+                                    
+                                    <div class="ingress m-all t-all d-all cf">
+                                        <p>
+                                            Turku Terror ultimate ry. on vuonna 1994 toimintansa aloittanut ultimateen eli liitokiekkoon keskittynyt urheiluseura. Seura osallistuu Suomen liitokiekkoliiton 
+                                            järjestämiin SM-sarjoihin miesten, naisten ja juniorijoukkueilla. Lisäksi seura järjestää vuosittain turnauksia kuten Yyteri Beach Ultimate -turnauksen 
+                                            Porissa sekä Turun seudun koulujen välisen turnauksen.
+                                        </p>
+                                        <p>
+                                            Kilpailutoiminnan lisäksi seura järjestää vuosittain 3-4 alkeiskurssia ja esittelee lajia urheilutapahtumissa, juniorileireillä ja yritysten tilaisuuksissa
+                                            erityisesti kesäkaudella. Seura toimii aktiivisesti yhteistyössä muiden turkulaisten liitokiekkoseurojen Frisbeegolfseura 7k:n ja Turku 
+                                            Universities' Ultimate Teamin kanssa.
+                                        </p>
+                                        
+                                    </div>
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+                                                    
+                                                    
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

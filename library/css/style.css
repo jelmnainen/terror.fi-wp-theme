@@ -1247,11 +1247,11 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
-  background-color: #eaedf2;
+  background-color: white;
   -webkit-font-smoothing: antialiased; }
 
 /********************
@@ -1395,6 +1395,7 @@ and more scalable.
       display: block;
       color: #9fa6b4;
       text-decoration: none;
+      text-transform: uppercase;
       padding: 0.75em;
       /*
       remember this is for mobile ONLY, so there's no need
@@ -1408,6 +1409,12 @@ and more scalable.
 
 /* end .nav */
 /*********************
+INGRESS STYLES
+*********************/
+.ingress {
+  text-align: center; }
+
+/*********************
 POSTS & CONTENT STYLES
 *********************/
 #content {
@@ -1416,8 +1423,7 @@ POSTS & CONTENT STYLES
 .hentry {
   background-color: white;
   border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #cccccc; }
+  margin-bottom: 1.5em; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
     padding: 1.5em; }
