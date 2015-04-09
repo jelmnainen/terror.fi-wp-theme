@@ -25,23 +25,25 @@ $alert-blue:        #d5edf8;
 $black:             #323944;
 $white:             #fff;
 
-$light-gray:        #f8f9fa;
+$light-gray:        #d2d2d2;
+$dark-gray:         #5c6b80;
 $gray:              #eaedf2;
 $text-color:        #5c6b80;
 $meta-gray:         #9fa6b4;
-
+$red:               #d22027;
 $tan:               #eceee5;
-
 $green:             #7dd667;
+$blue:              #6B8EBE;
 
-$bones-pink:        #f01d4f;
-$blue:              #2980b9;
-
-$link-color:        $bones-pink;
+$link-color:        $red;
 $link-hover:        darken($link-color, 9%);
+
+$header-color:      $blue;
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
+
+$terror-fonts:      'Roboto Condensed', 'Arial', sans-serif;
 
 
 /*

@@ -84,6 +84,8 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+                -webkit-transition-duration: 0.5s; /* Safari */
+                transition-duration: 0.5s;
 	}
 
 	/* on click */
@@ -185,7 +187,7 @@ and more scalable.
 
 		a {
 			display: block;
-			color: $meta-gray;
+			color: $light-gray;
 			text-decoration: none;
                         text-transform: uppercase;
 			padding: 0.75em;
@@ -197,7 +199,9 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+                            color: $red;
+                            -webkit-transition-duration: 0.5s; /* Safari */
+                            transition-duration: 0.5s
 			}
 		}
 
@@ -271,8 +275,9 @@ POSTS & CONTENT STYLES
 			margin-bottom: 1.5em;
 
 			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
+				border-bottom: 2px solid $dark-gray;
+				padding: 1.5em 0 0.5em;
+                                margin: 0 1.5em;
 			}
 
 			footer {
@@ -312,7 +317,7 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: $meta-gray;
+			color: $dark-gray;
 			font-style: italic;
 			margin: 0;
 

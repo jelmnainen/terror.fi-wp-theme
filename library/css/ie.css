@@ -288,8 +288,10 @@ NAVIGATION STYLES
       has the possibility of being a mobile device.
       */ }
       .nav li a:hover, .nav li a:focus {
-        color: white;
-        text-decoration: underline; }
+        color: #d22027;
+        -webkit-transition-duration: 0.5s;
+        /* Safari */
+        transition-duration: 0.5s; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-top: 0;

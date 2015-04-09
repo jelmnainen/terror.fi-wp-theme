@@ -933,11 +933,11 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .blue-btn, .comment-reply-link, #submit {
-  background-color: #2980b9; }
+  background-color: #6b8ebe; }
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    background-color: #2574a8; }
+    background-color: #5d83b8; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
-    background-color: #2472a4; }
+    background-color: #5980b6; }
 
 /******************************************************************
 Site Name:
@@ -1304,12 +1304,15 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #d22027;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: #aa1a20;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1393,7 +1396,7 @@ and more scalable.
     */ }
     .nav li a {
       display: block;
-      color: #9fa6b4;
+      color: #d2d2d2;
       text-decoration: none;
       text-transform: uppercase;
       padding: 0.75em;
@@ -1403,6 +1406,11 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
+      .nav li a:hover, .nav li a:focus {
+        color: #d22027;
+        -webkit-transition-duration: 0.5s;
+        /* Safari */
+        transition-duration: 0.5s; }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -1425,11 +1433,12 @@ POSTS & CONTENT STYLES
   border-radius: 3px;
   margin-bottom: 1.5em; }
   .hentry header {
-    border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
+    border-bottom: 2px solid #5c6b80;
+    padding: 1.5em 0 0.5em;
+    margin: 0 1.5em; }
   .hentry footer {
     padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
+    border-top: 1px solid #d2d2d2; }
     .hentry footer p {
       margin: 0; }
 
@@ -1450,7 +1459,7 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #9fa6b4;
+  color: #5c6b80;
   font-style: italic;
   margin: 0; }
 
@@ -1478,14 +1487,14 @@ POSTS & CONTENT STYLES
   .entry-content tr {
     border-bottom: 1px solid #eaedf2; }
     .entry-content tr:nth-child(even) {
-      background-color: #f8f9fa; }
+      background-color: #d2d2d2; }
   .entry-content td {
     padding: 7px;
     border-right: 1px solid #eaedf2; }
     .entry-content td:last-child {
       border-right: 0; }
   .entry-content th {
-    background-color: #f8f9fa;
+    background-color: #d2d2d2;
     border-bottom: 1px solid #eaedf2;
     border-right: 1px solid #eaedf2; }
     .entry-content th:last-child {
@@ -1493,7 +1502,7 @@ POSTS & CONTENT STYLES
   .entry-content blockquote {
     margin: 0 0 1.5em 0.75em;
     padding: 0 0 0 0.75em;
-    border-left: 3px solid #2980b9;
+    border-left: 3px solid #6b8ebe;
     font-style: italic;
     color: #9fa6b4; }
   .entry-content dd {
@@ -1514,7 +1523,7 @@ POSTS & CONTENT STYLES
     height: auto; }
   .entry-content pre {
     background: #323944;
-    color: #f8f9fa;
+    color: #d2d2d2;
     font-size: 0.9em;
     padding: 1.5em;
     margin: 0 0 1.5em;
@@ -1575,9 +1584,9 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1em;
     display: block;
-    color: #2980b9; }
+    color: #6b8ebe; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #2980b9;
+      background-color: #6b8ebe;
       color: white; }
   .pagination .current {
     cursor: default;
@@ -1601,7 +1610,7 @@ COMMENT STYLES
 #comments-title {
   padding: 0.75em;
   margin: 0;
-  border-top: 1px solid #f8f9fa;
+  border-top: 1px solid #d2d2d2;
   /* number of comments span */ }
 
 .commentlist {
@@ -1613,7 +1622,7 @@ COMMENT STYLES
   clear: both;
   overflow: hidden;
   padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
+  border-bottom: 1px solid #d2d2d2;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
@@ -1657,7 +1666,7 @@ COMMENT STYLES
   .comment.odd {
     background-color: white; }
   .comment.even {
-    background: #f8f9fa; }
+    background: #d2d2d2; }
 
 /* comment meta */
 /* comment content */
@@ -1685,7 +1694,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
   padding: 1.5em;
-  border-top: 1px solid #f8f9fa; }
+  border-top: 1px solid #d2d2d2; }
 
 #reply-title {
   margin: 0; }
@@ -1702,7 +1711,7 @@ COMMENT FORM STYLES
 
 .form-allowed-tags {
   padding: 1.5em;
-  background-color: #f8f9fa;
+  background-color: #d2d2d2;
   font-size: 0.9em; }
 
 /* comment submit button */
@@ -1744,7 +1753,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: #323944;
-  color: #f8f9fa; }
+  color: #d2d2d2; }
 
 /*
 if you checked out the link above:
@@ -1897,8 +1906,10 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: white;
-          text-decoration: underline; }
+          color: #d22027;
+          -webkit-transition-duration: 0.5s;
+          /* Safari */
+          transition-duration: 0.5s; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
