@@ -876,7 +876,7 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
+	background-color: $white;
 	color: $light-gray;
 }
 
@@ -900,4 +900,6 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+        .copyright {
+            text-align: center;
+        }

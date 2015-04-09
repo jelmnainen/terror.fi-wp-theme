@@ -1752,7 +1752,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
+  background-color: white;
   color: #d2d2d2; }
 
 /*
@@ -1765,6 +1765,9 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+.copyright {
+  text-align: center; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
